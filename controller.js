@@ -22,6 +22,10 @@ const addProduct = (req, res, next) => {
     productQty: req.body.productQty,
     productSize: req.body.productSize,
     productImage: req.body.productImage,
+    productSubImageOne: req.body.productSubImageOne,
+    productSubImageTwo: req.body.productSubImageTwo,
+    productSubImageThree: req.body.productSubImageThree,
+    productSubImageFour: req.body.productSubImageFour,
   });
   product
     .save()
@@ -44,6 +48,10 @@ const updateProduct = (req, res, next) => {
     productQty,
     productSize,
     productImage,
+    productSubImageOne,
+    productSubImageTwo,
+    productSubImageThree,
+    productSubImageFour,
   } = req.body;
 
   Product.updateOne(
@@ -57,6 +65,10 @@ const updateProduct = (req, res, next) => {
         productQty: productQty,
         productSize: productSize,
         productImage: productImage,
+        productSubImageOne: productSubImageOne,
+        productSubImageTwo: productSubImageTwo,
+        productSubImageThree: productSubImageThree,
+        productSubImageFour: productSubImageFour,
       },
     }
   )

@@ -10,6 +10,10 @@ const productSchema = new Schema({
   productQty: String,
   productSize: String,
   productImage: String,
+  productSubImageOne: String,
+  productSubImageTwo: String,
+  productSubImageThree: String,
+  productSubImageFour: String,
 });
 
 const Product = mongoose.model("Product", productSchema);
