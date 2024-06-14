@@ -1,8 +1,8 @@
 const express = require("express");
 const app = express();
 const cors = require("cors");
-const port = 3001;
-const host = "0.0.0.0";
+const port = 3021;
+const host = '0.0.0.0';
 const mongoose = require("mongoose");
 const router = require("./router");
 
